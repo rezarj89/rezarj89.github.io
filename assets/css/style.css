@@ -1,128 +1,38 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(../font/Vazir.ttf) format('truetype') url(../font/Vazir.woff) format('woff');
+}
 
-header ul li {
+body {
+    font-family: 'vazir';
+}
+
+li {
     list-style: none;
 }
 
-header nav ul li a:hover {
-    border-bottom: 2px solid black;
-}
-
-header ul li a{
+a {
     text-decoration: none;
-    font-size: 0.9em;
 }
 
-header div ul li:first-child a i {
-    font-size: 0.7em !important;
+#menuBox ul li {
+    min-width: 205px;
 }
 
-header div ul li a:hover {
-    border-bottom: 2px solid black;
-}
-
-header div ul li:last-child a:hover {
-    border: none;
-}
-
-@media (max-width: 760px) {
-    #cart a i {
-        padding: 0.7rem 0;
+@media (max-width: 768px){
+    #menuBox ul li a p {
+        font-size: 0.9em !important;
     }
 
-    #sign a i {
-        padding: 0.7rem 0;
+    #navMenu ul div li button {
+        font-size: 0.9em !important;
     }
 }
 
-#search a p {
-    box-shadow: 2px 2px 2px #777;
-    width: 200%;
-    font-size: 0.9em;
-}
-
-#search a:hover p {
-    display: block !important;
-}
-
-#cart {
-    position: relative;
-}
-
-#cart a p {
-    box-shadow: 2px 2px 2px #777;
-    width: 300%;
-    font-size: 0.9em;
-}
-
-#cart a:hover p {
-    display: block !important;
-}
-
-#learnMore a {
-    text-decoration: none;
-}
-
-#learnMore a, #learnMore a i {
-    transition: all 400ms;
-}
-
-#learnMore a:hover {
-    text-decoration: underline;
-    transition: all 400ms;
-}
-
-#learnMore a:hover i {
-    transform: translateX(7px);
-    transition: all 400ms;
-}
-
-#carouselExample div div section {
-    left: 75px !important;
-    width: 30%;
-}
-
-#products ul li { 
-    list-style: none;
-} 
-
-#products ul li a img {
-    width: 40px;
-    height: 40px;
-} 
-
-#box section {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-#box a {
-    text-decoration: none;
-}
-
-#box1 a {
-    text-decoration: none;
-}
-
-#box1 section {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-#socialMedia {
-    padding: 0 75px;
-    margin: 75px 0;
-    height: 32px;
-}
-
-#socialMedia h2 {
-    font-size: 1.1em;
-    font-weight: normal;
-    margin: 4px 12px 4px 0;
-    float: left;
-}
-
-#socialMedia img {
-    width: 32px;
-    height: 32px;
-
-}
+@media (max-width: 768px) {
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+    }
+  }
